@@ -1,0 +1,223 @@
+{
+   "types": [
+      {
+         "id": 1,
+         "active": true,
+         "title": "حريق",
+         "icon_name": "fire",
+         "size": 40
+      },
+      {
+         "id": 2,
+         "active": false,
+         "title": "جريمة",
+         "icon_name": "knife",
+         "size": 35
+      },
+      {
+         "id": 3,
+         "active": false,
+         "title": "سرقة",
+         "icon_name": "unlock-alt",
+         "size": 35
+      },
+      {
+         "id": 4,
+         "active": false,
+         "title": "حادث سيارة",
+         "icon_name": "car-crash",
+         "size": 29
+      },
+      {
+         "id": 5,
+         "active": false,
+         "title": "كوارث طبيعة",
+         "icon_name": "home-flood",
+         "size": 34
+      },
+      {
+         "id": 6,
+         "active": false,
+         "title": "اسعاف",
+         "icon_name": "ambulance",
+         "size": 29
+      }
+   ],
+   "mapStyle": [
+    {
+      "featureType": "administrative.country",
+      "stylers": [
+        {
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.country",
+      "elementType": "geometry.stroke",
+      "stylers": [
+        {
+          "color": "#c95454"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.country",
+      "elementType": "labels",
+      "stylers": [
+        {
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.country",
+      "elementType": "labels.text.stroke",
+      "stylers": [
+        {
+          "color": "#ffffff"
+        },
+        {
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "featureType": "landscape",
+      "stylers": [
+        {
+          "color": "#ebebeb"
+        }
+      ]
+    },
+    {
+      "featureType": "road",
+      "elementType": "geometry.fill",
+      "stylers": [
+        {
+          "color": "#d7495a"
+        },
+        {
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "featureType": "road.arterial",
+      "stylers": [
+        {
+          "color": "#d7495a"
+        }
+      ]
+    },
+    {
+      "featureType": "road.arterial",
+      "elementType": "geometry.stroke",
+      "stylers": [
+        {
+          "color": "#ffffff"
+        }
+      ]
+    },
+    {
+      "featureType": "road.arterial",
+      "elementType": "labels.icon",
+      "stylers": [
+        {
+          "color": "#c95454"
+        },
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "road.arterial",
+      "elementType": "labels.text.stroke",
+      "stylers": [
+        {
+          "color": "#ffffff"
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway",
+      "stylers": [
+        {
+          "color": "#d7495a"
+        },
+        {
+          "weight": 0.5
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway",
+      "elementType": "labels.icon",
+      "stylers": [
+        {
+          "color": "#0d0c0c"
+        },
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway",
+      "elementType": "labels.text",
+      "stylers": [
+        {
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway",
+      "elementType": "labels.text.stroke",
+      "stylers": [
+        {
+          "color": "#ffffff"
+        },
+        {
+          "weight": 3.5
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway.controlled_access",
+      "elementType": "geometry.fill",
+      "stylers": [
+        {
+          "color": "#ffffff"
+        }
+      ]
+    },
+    {
+      "featureType": "road.local",
+      "elementType": "labels.text",
+      "stylers": [
+        {
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "featureType": "road.local",
+      "elementType": "labels.text.stroke",
+      "stylers": [
+        {
+          "color": "#ffffff"
+        }
+      ]
+    },
+    {
+      "featureType": "transit.line",
+      "stylers": [
+        {
+          "color": "#d7495a"
+        }
+      ]
+    }
+  ]
+}
