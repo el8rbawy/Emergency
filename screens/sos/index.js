@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { ScrollView, Text, View, TouchableHighlight, TouchableOpacity, Dimensions, ActivityIndicator, Alert } from 'react-native';
 import { useHeaderHeight } from '@react-navigation/stack';
-import MapView, { Marker } from 'react-native-maps';
+import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 import * as Location from 'expo-location';
-import { MaterialCommunityIcons, FontAwesome, FontAwesome5, Entypo, MaterialIcons } from '@expo/vector-icons';
+import { MaterialCommunityIcons, FontAwesome, FontAwesome5, MaterialIcons } from '@expo/vector-icons';
 import { types, mapStyle } from './items.json';
 import { AuthContext } from '../../services/context';
 import { styles } from './style';
@@ -45,7 +45,12 @@ function Sos({ navigation }) {
             }
 
             Location.reverseGeocodeAsync({ latitude: res.coords.latitude, longitude: res.coords.longitude })
-               .then(res => setAddress(`${ res[0].city }, ${ res[0].subregion }, ${ res[0].region }`));
+               .then(res => {
+                  const city = res[0].city.concat(', ') || '';
+                  const subregion = res[0].subregion.concat(', ') || '';
+
+                  setAddress(city + subregion + res[0].region);
+               });
 
             setLocation(gps);
          })
@@ -151,6 +156,7 @@ function Sos({ navigation }) {
                initialRegion={ location } 
                style={{ height: mapHeight }}
                customMapStyle={ mapStyle }
+               provider={ PROVIDER_GOOGLE }
             >
                { location && <Marker coordinate={{ latitude: location.latitude, longitude: location.longitude }} />}
             </MapView>

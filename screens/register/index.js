@@ -28,7 +28,7 @@ function Register() {
    // -- Send data
    function handleSubmit() {
       if (!Object.values(values).every(v => v !== '')) {
-         alert('لا يمكنك ترك أي حقل فارغاً.');
+         Alert.alert('تنبيه', 'لا يمكنك ترك أي حقل فارغاً.');
          return;
       }
 

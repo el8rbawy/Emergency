@@ -17,14 +17,22 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ahdgrbwy.emergency"
+      "bundleIdentifier": "com.ahdgrbwy.emergency",
+      "config": {
+        "googleMapsApiKey": "AIzaSyDXadGa1MxL7DuxZWUzjb3BB7wBL5hSlUA"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.ahdgrbwy.emergency"
+      "package": "com.ahdgrbwy.emergency",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDXadGa1MxL7DuxZWUzjb3BB7wBL5hSlUA"
+        }
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
